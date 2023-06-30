@@ -1,0 +1,23 @@
+body{
+  background-color: #262626!important;
+}
+input,.card-body{
+  color:#fff!important;
+  background-color: #4e4e4e!important;
+}
+input::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
+  color: #fff!important;
+  opacity: 1; /* Firefox */
+}
+.app {
+  padding: 30px;
+  max-width: 549px;
+  margin: 0 auto;
+}
+
+.todo {
+  align-items: center;
+  display: flex;
+  font-size: 18px;
+  justify-content: space-between;
+}
