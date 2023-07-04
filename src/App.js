@@ -4,12 +4,15 @@ import { Button, Card, Form } from 'react-bootstrap';
 import 'bootstrap/dist/css/bootstrap.min.css';
 
 
-function Todo({ todo, index, markTodo, removeTodo }) {
+const Todo = ({ todo, index, markTodo, removeTodo }) => {
   return (
     <div
       className="todo"
     >
-      <span style={{ textDecoration: todo.isDone ? "line-through" : "" }}>{todo.text}</span>
+      <span 
+      >{todo.text}
+     {todo.isDone && <span className="badge bg-success ms-2">Done</span>}
+      </span>
       <div>
         <Button variant="outline-success mx-3" onClick={() => markTodo(index)}>✓</Button>
         <Button variant="outline-danger" onClick={() => removeTodo(index)}>✕</Button>
